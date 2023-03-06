@@ -1,0 +1,48 @@
+{
+    "configurations": [
+
+        {
+            "name": "Launch Application",
+            "program": "${workspaceFolder}/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Run Stream",
+            "program": "${workspaceFolder}/commands/stream.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Run Dagoth",
+            "program": "${workspaceFolder}/commands/dagoth.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Deploy Commands",
+            "program": "${workspaceFolder}/deploy-commands.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Run Script: start",
+            "request": "launch",
+            "command": "node index.js",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
